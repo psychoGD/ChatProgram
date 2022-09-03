@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="Telegram" Height="450" Width="800" WindowStyle="None">
+        Title="Telegram" Height="500" Width="800" WindowStyle="None">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
@@ -23,8 +23,35 @@
                 <ColumnDefinition Width="1*"></ColumnDefinition>
                 <ColumnDefinition Width="3*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Grid ></Grid>
-            <Grid ></Grid>
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <TextBox Text="Search" MouseEnter="TextBox_MouseEnter" MouseLeave="TextBox_MouseLeave"></TextBox></Grid>
+                <Grid Grid.Row="1">
+                    <Image Source="images\fakeNumber1.png"></Image></Grid>
+                <Grid Grid.Row="2">
+                    <Image Source="images\fakeNumber1.png"></Image>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Image Source="images\fakeNumber1.png"></Image>
+                </Grid>
+                <Grid Grid.Row="4">
+                    <Image Source="images\fakeNumber1.png"></Image>
+                </Grid>
+                <Grid Grid.Row="5">
+                    <Image Source="images\fakeNumber1.png"></Image>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="1" >
+                <Image Source="images\ChatTask.png" Stretch="Fill" StretchDirection="Both"></Image></Grid>
         </Grid>
     </Grid>
 </Window>

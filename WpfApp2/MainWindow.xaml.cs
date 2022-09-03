@@ -29,5 +29,20 @@ namespace WpfApp2
         {
             this.Close();
         }
+
+        private void TextBox_MouseEnter(object sender, MouseEventArgs e)
+        {
+            var sender2 = sender as TextBox;
+            sender2.Text = "";
+        }
+
+        private void TextBox_MouseLeave(object sender, MouseEventArgs e)
+        {
+            var sender2 = sender as TextBox;
+            if(sender2.Text.Length<1)
+            {
+                sender2.Text = "Search";
+            }
+        }
     }
 }
